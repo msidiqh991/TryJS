@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    background-color: gainsboro;
+}
+table {
+    border-color: slateblue;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.sheet {
+    background-size: cover;
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    z-index: 1;
+}
+.title-form {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lucida Sans';
+    background-color: lavender ;
+}
+.title-form .form-h1 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.main-form {
+    padding: 2%;
+}
+.col-sm {
+    padding-top: 5%;
+}
+.col-sm input[type=submit] {
+    background-color: #4CAF50;
+    color: #fff;
+}
+.col-sm input[type=submit], input[type=reset] {
+    cursor: pointer;
+}

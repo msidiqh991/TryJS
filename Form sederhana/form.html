@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form Template</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="sheet">
+        <form action="" name="useform" method="post">
+            <table align="center" cellspacing="0" cellpadding="3" width="100%">
+                <tbody>
+                    <tr class="title-form">
+                        <td class="form-h1">Contoh Formulir Pengisian Data</td>
+                    </tr>
+                   <tr>
+                       <td class="main-form">
+                            <label>Nama : <br></label>
+                                <input type="text" name="nama" id="nama">
+                            <label>Usia :</label>
+                               <input type="number" name="usia" id="usia">
+                            <label>Jenis Kelamin : <br></label>
+                            <select name="jk">
+                                <option value="0" disabled selected>-</option>
+                                <option value="Laki-laki">Laki-laki</option>
+                                <option value="Perempuan">Perempuan</option>
+                            </select>
+                            <br>                       
+                            <label>Email :</label>
+                            <input type="email" id="email">    
+                            <label>Kelulusan Terakhir :</label>
+                                <input type="date" id="tanggal">
+                            <label>Keterangan :</label>
+                                <textarea id="ket" name="ket" rows="5"></textarea>
+                            <div class="col-sm">
+                                <input type="submit" onclick="inForm()" name="submit" value="Submit">
+                                <input type="reset" onclick="resetButton()" name="reset" value="Reset">
+                            </div>
+                       </td>
+                   </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
