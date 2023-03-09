@@ -22,7 +22,7 @@ p1.classList.add('title');
 const titleTwo = document.getElementsByTagName('h2')[0];
 titleTwo.classList.add('bg-clr');
 titleTwo.style.color = "white";
-titleTwo.style.backgroundColor = "brown";
+titleTwo.style.backgroundColor = "orange";
 
 // Get all element classList with toggle -> Menunjuk class
 document.body.classList.toggle('passive');
