@@ -19,6 +19,9 @@ $(document).ready(function(){
     $('#footer .ft-p').css('font-weight','bold');
     $('#footer .ft-p').css('color','#fff');
 
+    // Empty Feature -- BD as Basisdata
+    $('.BD').empty();
+
     // Manipulation DOM --> Subject requirements
     $('.matkul').css('list-style-type', 'none');
     var ai = $('<li>Artificial Intelegence</li>');
