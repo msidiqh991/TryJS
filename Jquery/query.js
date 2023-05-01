@@ -29,12 +29,19 @@ $(document).ready(function(){
     var firstoption = $('<b><i><u>Matakuliah terpilih : </u></i></b>');
 
      // Event handler
-     $('#pilihPweb').on('click', function() {
+    $('#pilihPweb').on('click', function() {
         alert('Matakuliah telah dipilih!');
     });
     $('#hapusPweb').on('click', function() {
         $('.pweb').remove();
         alert('Pemrograman Web, telah dihapus!');
+    });
+    $('#pilihCI').on('click', function() {
+        alert('Matakuliah telah dipilih!');
+    });
+    $('#hapusCI').on('click', function() {
+        $('.computerInteraction').remove();
+        alert('Interaksi Komputer, telah dihapus!');
     });
     
     ai.prependTo($('.matkul'));
