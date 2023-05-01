@@ -8,7 +8,7 @@
 </head>
 <body>
     <h3>Mencoba Enkripsi Javascript Query</h3>
-    <button>Tampilkan Form</button>
+    <button id="showForm">Tampilkan Form</button>
     <br><br>
     <textarea name="form1" id="" cols="50" rows="7" placeholder="Type here"></textarea>
     <ul id="mainObject">
@@ -18,11 +18,16 @@
     </ul>
     <h4>Matakuliah Bersyarat</h4>
     <ul class="matkul">
-        <li>Pemrograman Web</li>
+        <li class="pweb">
+            Pemrograman Web
+            <button id="pilihPweb">Pilih!</button>
+            <button id="hapusPweb">X</button>
+        </li>
         <li>Interaksi Komputer</li>
         <li>Kecerdasan Buatan</li>
         <li>Struktur data</li>
         <li class="BD">Basis data</li>
+        
     </ul>
     <div id="footer">
         <p class="ft-p">Footer Copyright 2023</p>

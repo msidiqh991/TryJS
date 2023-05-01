@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('textarea').hide();
     // Appearance function
-    $("button").click( function() { 
+    $("#showForm").on('click', function() { 
         $("textarea").show();
     });
     // Applying DOM
@@ -28,6 +28,15 @@ $(document).ready(function(){
     var algo = $('<li>Algorithm</li>');
     var firstoption = $('<b><i><u>Matakuliah terpilih : </u></i></b>');
 
+     // Event handler
+     $('#pilihPweb').on('click', function() {
+        alert('Matakuliah telah dipilih!');
+    });
+    $('#hapusPweb').on('click', function() {
+        $('.pweb').remove();
+        alert('Pemrograman Web, telah dihapus!');
+    });
+    
     ai.prependTo($('.matkul'));
     algo.appendTo($('.matkul'));
     firstoption.insertBefore($('.matkul'));
