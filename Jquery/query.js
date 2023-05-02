@@ -1,8 +1,8 @@
 $(document).ready(function(){
     $('textarea').hide();
-    // Appearance function
+    // Appearance function --> toggle
     $("#showForm").on('click', function() { 
-        $("textarea").show();
+        $("textarea").toggle();
     });
     // Applying DOM
     $('#mainObject li:even').css('background-color','cyan');
@@ -51,10 +51,16 @@ $(document).ready(function(){
     $('#hideCI').on('click', function() {
         $('.computerInteraction').slideUp(2000);
     });
-
+    // Show up hide option
     $('#showButton').on('click', function() {
         $('.computerInteraction').slideDown(2000);
         $('.pweb').slideDown(2000);
+    });
+    // Toggle function --> 3 color padding box
+    $('#toggleOne').on('click', function() {
+        $('.box-one').toggle();
+        $('.box-two').toggle();
+        $('.box-three').toggle();
     });
 
     ai.prependTo($('.matkul'));
