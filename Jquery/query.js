@@ -52,8 +52,13 @@ $(document).ready(function(){
         $('.computerInteraction').slideUp(2000);
     });
 
+    $('#showButton').on('click', function() {
+        $('.computerInteraction').slideDown(2000);
+        $('.pweb').slideDown(2000);
+    });
+
     ai.prependTo($('.matkul'));
-    algo.appendTo($('.matkul'));
+    algo.appendTo($('.BD'));
     firstoption.insertBefore($('.matkul'));
     closing.insertAfter($('.matkul'));    
 });  
