@@ -44,6 +44,14 @@ $(document).ready(function(){
         alert('Interaksi Komputer, telah dihapus!');
     });
     
+    // Effect (Animation) feature JQuery
+    $('#hidePweb').on('click', function() {
+        $('.pweb').fadeOut(1000);
+    });
+    $('#hideCI').on('click', function() {
+        $('.computerInteraction').slideUp(2000);
+    });
+
     ai.prependTo($('.matkul'));
     algo.appendTo($('.matkul'));
     firstoption.insertBefore($('.matkul'));
