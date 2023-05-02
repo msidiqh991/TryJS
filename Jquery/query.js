@@ -4,6 +4,16 @@ $(document).ready(function(){
     $("#showForm").on('click', function() { 
         $("textarea").toggle();
     });
+    // Add animate
+    $("#animateForm").on('click', function() { 
+        $("textarea").animate({
+            padding: 20,
+            cols: 100,
+            fontFamily: 'Helvetica',
+            marginTop: 30,
+        });
+    });
+
     // Applying DOM
     $('#mainObject li:even').css('background-color','cyan');
     $('#mainObject li:odd').css('background-color','yellow');
