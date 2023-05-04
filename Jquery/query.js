@@ -73,6 +73,9 @@ $(document).ready(function(){
         $('.box-three').toggle();
     });
 
+    // Library JQuery -- Slick
+    $('.your-class').slick();
+
     ai.prependTo($('.matkul'));
     algo.appendTo($('.BD'));
     firstoption.insertBefore($('.matkul'));
